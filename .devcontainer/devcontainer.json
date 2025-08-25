@@ -1,0 +1,7 @@
+{
+  "name": "FHR DHI Devcontainer",
+   "build": {
+     "dockerfile": "Dockerfile",
+     "context": "."
+  }
+} 
