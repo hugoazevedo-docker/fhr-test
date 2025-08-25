@@ -3,5 +3,10 @@
    "build": {
      "dockerfile": "Dockerfile",
      "context": "."
-  }
+  },
+  "containerEnv": {
+	  "DOCKER_USERNAME": "${localEnv:DOCKER_USERNAME}",
+	  "DOCKER_PASSWORD": "${localEnv:REGISTRY_TOKEN}"
+  },
+ 	"initializeCommand": "echo ${REGISTRY_TOKEN} | docker login -u ${DOCKER_USERNAME} --password-stdin"
 } 
