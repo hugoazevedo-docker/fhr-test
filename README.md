@@ -13,7 +13,7 @@ The custom image is built using a layered approach:
 1. **Base Layer**: `dhi-node` Debian-dev variant
 2. **Overlay Layer**: `dhi-python` Debian-dev variant (applied via OCI artifacts)
 3. **Package Layer**: Additional custom packages not included in base images
-4. **User Configuration**: Declared user aand group
+4. **User Configuration**: Declared user and group
 
 ## Repository Structure
 
@@ -52,9 +52,9 @@ This repository implements Docker's DHI customization flow using three main opti
 - Customizes the environment for specific development needs
 - Preserves security compliance during package installation
 
-### 3. User Declaration
+### 3. User and Group Declaration
 - Defines user accounts and groups
-- 
+
 ## Getting Started
 
 ### Prerequisites
@@ -66,7 +66,7 @@ This repository implements Docker's DHI customization flow using three main opti
 
 1. **Fork or clone this repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/hugoazevedo-docker/fhr-test.git
    ```
 
 2. **Open in Codespaces**
